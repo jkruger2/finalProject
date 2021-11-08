@@ -2,14 +2,15 @@
 <html>
     <div>
         <a href="{{ url_for('home') }}"><b>COD Tracker</b></a>
-        <a>Leaderboards</a>
-        <a>Login</a>
+        <a href="{{ url_for('leaderboards') }}">Leaderboards</a>
+        <a href="{{ url_for('login') }}">Login</a>
     </div>
     <hr>
     <head>
-        {{ title }}
+
     </head>
     <body>
-
+        {% block greeting %}{% endblock %}
+        {% block content %}{% endblock %}
     </body>
 </html>

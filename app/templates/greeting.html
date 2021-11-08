@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block greeting %}
+    <h3>{{ message }}</h3>
+    <p><a href="{{ url_for('login') }}">Login</a> or <a href="{{ url_for('register') }}">Sign up</a> to compare your Call ofDuty stats with other players.</p>
+    <p>View how others are doing <a href="{{ url_for('leaderboards') }}">here!</a></p>
+{% endblock %}
