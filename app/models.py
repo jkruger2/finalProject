@@ -23,11 +23,11 @@ def load_use(id):
 
 class statistics(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    headshots = db.column(db.String(64))
-    kills = db.column(db.String(64))
-    bestKD = db.column(db.String(64))
-    bestWL = db.column(db.String(64))
-    bestSR = db.column(db.String(64))
+    headshots = db.Column(db.String(64))
+    kills = db.Column(db.String(64))
+    bestKD = db.Column(db.String(64))
+    bestWL = db.Column(db.String(64))
+    bestSR = db.Column(db.String(64))
 
 
     def __repr__(self):
