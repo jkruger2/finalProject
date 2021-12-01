@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {{ title }}
+    <h1>{{ title }}</h1>
+    <ol>
+
+    {% for i in range(0,10) %}
+        <li><p>{{d['entries'][i]['username']}} -- {{d['entries'][i]['rank']}} -- {{d['entries'][i]['values']['wins']}} -- {{d['entries'][i]['values']['kills']}} </p></li>
+    {% endfor %}
+    </ol>
+
+
 {% endblock %}
