@@ -36,7 +36,7 @@ def statSearch():
             conn = http.client.HTTPSConnection("call-of-duty-modern-warfare.p.rapidapi.com")
             headers = {
                 'x-rapidapi-host': "call-of-duty-modern-warfare.p.rapidapi.com",
-                'x-rapidapi-key': "096457d7f9msh93ab9be5adf5896p1ae9cejsncc1080dc547f"
+                'x-rapidapi-key': "{Your rapid API Key}"
             }
             conn.request("GET", "/multiplayer/{}/{}".format(person, platform), headers=headers)
 
