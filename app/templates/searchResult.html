@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Here are career stats for the User: {{d['username']}}</h3>
+    <p>prestige: {{d['prestige']}}</p>
+    <p>level: {{d['level']}}</p>
+    <p>wins: {{d['lifetime']['all']['properties']['wins']}}</p>
+    <p>kills: {{d['lifetime']['all']['properties']['kills']}}</p>
+    <p>headhshots: {{d['lifetime']['all']['properties']['headshots']}}</p>
+    <p>Kill / Death ratio: {{d['lifetime']['all']['properties']['kdRatio']}}</p>
+    <p>Best Killstreak: {{d['lifetime']['all']['properties']['bestKillStreak']}}</p>
+
+    <p>Click <a href="{{ url_for('statSearch') }}">here</a> to search for someone else!</p>
+{% endblock %}

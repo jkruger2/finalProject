@@ -5,9 +5,9 @@
     <ol>
 
     {% for i in range(0,10) %}
-        <li><p>{{d['entries'][i]['username']}} -- {{d['entries'][i]['rank']}} -- {{d['entries'][i]['values']['wins']}} -- {{d['entries'][i]['values']['kills']}} </p></li>
+        <li><p>Username: {{d['entries'][i]['username']}}, Wins: {{d['entries'][i]['values']['wins']}}, Kills: {{d['entries'][i]['values']['kills']}} </p></li>
     {% endfor %}
     </ol>
 
-
+    <p>Want to look up stats for someone specific? <a href="{{ url_for('statSearch') }}"><b>Click Here!</b></a></p>
 {% endblock %}
