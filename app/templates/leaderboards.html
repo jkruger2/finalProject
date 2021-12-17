@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div class="container">
     <h1>{{ title }}</h1>
     <ol>
 
@@ -10,4 +11,5 @@
     </ol>
 
     <p>Want to look up stats for someone specific? <a href="{{ url_for('statSearch') }}"><b>Click Here!</b></a></p>
+    </div>
 {% endblock %}
